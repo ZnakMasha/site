@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<?php require_once("../www/include/database.php"); ?>
+
+	<meta http-equiv="Content_Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="article, news, life" />
+	<meta name="description" content="Пробный сайт" />
+	<link href="../bootstrap/css/bootstrap.css" rel="stylesheet" />
+	<link href="../css/style.css" rel="stylesheet" type="text/css" />
+	<link href="../image/panda.ico" rel="shortcut icon" type="image/x-icon" />
+	<title>SITE</title>
+	
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="www/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="www/bootstrap/js/npm.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$("modal").modal();
+		});
+	</script>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="navbar">
+					<div class="row">
+						<div class="col-lg-3 col-md-5 col-lg-offset-9 col-md-offset-7">
+							<a class="reg" href="../../index.html">Bыxoд</a>
+						</div>
+					</div>
+					<div class="row">
+						<div img src="" alt="" class="main_menu">
+						<ul>
+							<div class="col-lg-2 col-md-3 col-sm-4 col-lg-offset-1 col-md-offset-1"><li><a href="../index.html">На главную</a></li></div>
+							<div class="col-lg-7 col-md-6 col-sm-8"><li><a href="People.html">Люди</a></li>
+								<li><a href="News.html">Новости</a></li>
+								<li><a href="Pic.html">Галерея</a></li>
+								<li><a href="Order.html">Order</a></li>
+							</div>
+							<div class="col-lg-2 col-md-2 hidden-lg hidden-md"></div>
+						</ul>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="content">
+		<div class="zakaz">
+			 <p>Make/delete order</p>
+			<form action="../include/orders.php" id="order" method="post" name="registerform">
+							<div class="form-group">
+								<div class="row">
+									<input type="text" name="username" class="form-control" placeholder="Мое имя.." value="">
+								</div>
+								<div class="row">
+									<input type="text" name="orders" class="form-control" placeholder="Я хочу заказать/удалить.." value="">
+								</div>
+								<div class="row">
+									<input type="text" name="count" class="form-control" placeholder="Количество.." value="">
+								</div>
+								<div class="row">
+									<input type="text" name="no_tel" class="form-control" placeholder="Мой номер телефона.." value="">
+								</div>
+								<div class="row">
+									<input type="text" name="email" class="form-control" placeholder="Email.." value="">
+								</div>
+								<div class="row">
+									<button type="submit" name="makeorder" class="btn btn-primary">Заказать</button>
+									<button type="submit" name="deleteorder" class="btn btn-primary">Удалить заказ</button>
+								</div>
+								
+							</div>
+			 </form>
+		</div>	
+		
+	</div>	
+	
+		
+	
+	<footer>
+	</footer>
+
+</body>
+
+</html>
